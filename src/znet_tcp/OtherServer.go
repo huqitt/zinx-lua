@@ -60,6 +60,7 @@ func (s *OtherServer) initConnection(dialConn ziface.IConnection, other_conf uti
 
 // 链接其他服务
 func (s *OtherServer) ConnectionOther() {
+	fmt.Println("开启服务发现.")
 	count := 0
 	waitConnList := map[utils.OtherServerConfig]bool{}
 
@@ -78,7 +79,7 @@ func (s *OtherServer) ConnectionOther() {
 		}
 	}
 
-	fmt.Println(waitConnList)
+	//fmt.Println(waitConnList)
 	for ;count > 0; {
 		for v,_ := range waitConnList {
 			tcp_addr,_ := net.ResolveTCPAddr("tcp", v.Host)
@@ -103,7 +104,7 @@ func (s *OtherServer) ConnectionOther() {
 //开启网络服务
 func (s *OtherServer) Start() {
 	fmt.Printf("[START] Server name: %s,listenner at Host: %s is starting\n", s.Name, s.Host)
-	fmt.Printf("[Zinx] Version: %s, MaxConn: %d,  MaxPacketSize: %d\n",
+	fmt.Printf("[Zinx-Lua] Version: %s, MaxConn: %d,  MaxPacketSize: %d\n",
 		utils.GlobalServer.Version,
 		utils.GlobalServer.MaxConn,
 		utils.GlobalServer.MaxPacketSize)

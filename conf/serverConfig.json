@@ -1,8 +1,8 @@
 {
   "Id":1,
   "Name":"demo server",
-  "ServerName":"zinx server",
+  "ServerName":"zinx-lua server",
   "Host":"127.0.0.1:8888",
   "MaxConn":3,
-  "Version":"zinx v0.4"
+  "Version":"zinx v0.1"
 }

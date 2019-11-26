@@ -66,7 +66,7 @@ func (s *Server) ListenerClient() {
 	}
 
 	//已经监听成功
-	fmt.Println("start Zinx server  ", s.Name, " succ, now listenning...")
+	fmt.Println("start Zinx-Lua server  ", s.Name, " succ, now listenning...")
 
 	//TODO server.go 应该有一个自动生成ID的方法
 	var cid uint32
@@ -106,7 +106,7 @@ func (s *Server) ListenerClient() {
 //开启网络服务
 func (s *Server) Start() {
 	fmt.Printf("[START] Server name: %s,listenner at Host: %s is starting\n", s.Name, s.Host)
-	fmt.Printf("[Zinx] Version: %s, MaxConn: %d,  MaxPacketSize: %d\n",
+	fmt.Printf("[Zinx-Lua] Version: %s, MaxConn: %d,  MaxPacketSize: %d\n",
 		utils.GlobalServer.Version,
 		utils.GlobalServer.MaxConn,
 		utils.GlobalServer.MaxPacketSize)
