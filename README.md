@@ -46,4 +46,5 @@ zinx-lua
 >>>param：table类型，传给目标服务器的参数
   
 >>（3）AddServer（ser_id, name, desc）有服务器连接到本机时触发
+
 >>（4）编写业务逻辑或者lua脚本处理服务器消息
