@@ -4,7 +4,7 @@ zinx-lua
 ## 说明
 
 这是一个通信采用GO语言编写，业务逻辑可以采用lua的服务器框架，是zinx的服务器的分支。
-zinx：https://github.com/aceld/zinx
+>zinx：https://github.com/aceld/zinx
 
 ## 安装
 
